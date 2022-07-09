@@ -1,0 +1,395 @@
+package Converter;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Windows 10
+ */
+public class Energy extends javax.swing.JFrame {
+
+    /**
+     * Creates new form Energy
+     */
+    public Energy() {
+        initComponents();
+    }
+    public void same(){
+        double var = Double.parseDouble(textfrom.getText().toString());
+        String var2 = Double.toString(var);
+        textto.setText(var2);
+    }
+    public void joule_kilojoule(){
+       double var = Double.parseDouble(textfrom.getText().toString());
+       var = var/1000;
+       String var2 = Double.toString(var);
+       textto.setText(var2);
+   }
+public void joule_gramcalorie(){
+       double var = Double.parseDouble(textfrom.getText().toString());
+       var = var/4.184;
+       String var2 = Double.toString(var);
+       textto.setText(var2);
+   }
+public void joule_kilocalorie(){
+       double var = Double.parseDouble(textfrom.getText().toString());
+       var = var/4184;
+       String var2 = Double.toString(var);
+       textto.setText(var2);
+   }
+public void joule_watthour(){
+       double var = Double.parseDouble(textfrom.getText().toString());
+       var = var/3600;
+       String var2 = Double.toString(var);
+       textto.setText(var2);
+   
+}
+public void kilojoule_joule(){
+       double var = Double.parseDouble(textfrom.getText().toString());
+       var = var*1000;
+       String var2 = Double.toString(var);
+       textto.setText(var2);
+   }
+public void kilojoule_gramcalorie(){
+       double var = Double.parseDouble(textfrom.getText().toString());
+       var = var*239;
+       String var2 = Double.toString(var);
+       textto.setText(var2);
+   }
+public void kilojoule_kilocalorie(){
+       double var = Double.parseDouble(textfrom.getText().toString());
+       var = var*4.184;
+       String var2 = Double.toString(var);
+       textto.setText(var2);
+   }
+
+
+public void kilojoule_watthour(){
+       double var = Double.parseDouble(textfrom.getText().toString());
+       var = var*3.6;
+       String var2 = Double.toString(var);
+       textto.setText(var2);
+   }
+public void gramcalorie_joule(){
+       double var = Double.parseDouble(textfrom.getText().toString());
+       var = var*4.184;
+       String var2 = Double.toString(var);
+       textto.setText(var2);
+   }
+public void gramcalorie_kilojoule(){
+       double var = Double.parseDouble(textfrom.getText().toString());
+       var = var/239;
+       String var2 = Double.toString(var);
+       textto.setText(var2);
+   }
+
+public void gramcalorie_kilocalorie(){
+       double var = Double.parseDouble(textfrom.getText().toString());
+       var = var/1000;
+       String var2 = Double.toString(var);
+       textto.setText(var2);
+   }
+
+public void gramcalorie_watthour(){
+       double var = Double.parseDouble(textfrom.getText().toString());
+       var = var/860;
+       String var2 = Double.toString(var);
+       textto.setText(var2);
+   }
+public void kilocalorie_joule(){
+       double var = Double.parseDouble(textfrom.getText().toString());
+       var = var*4184;
+       String var2 = Double.toString(var);
+       textto.setText(var2);
+   }
+public void kilocalorie_kilojoule(){
+       double var = Double.parseDouble(textfrom.getText().toString());
+       var = var*4.184;
+       String var2 = Double.toString(var);
+       textto.setText(var2);
+   }
+
+
+public void kilocalorie_gramcalorie(){
+       double var = Double.parseDouble(textfrom.getText().toString());
+       var = var*1000;
+       String var2 = Double.toString(var);
+       textto.setText(var2);
+   }
+
+public void kilocalorie_watthour(){
+       double var = Double.parseDouble(textfrom.getText().toString());
+       var = var*1.162;
+       String var2 = Double.toString(var);
+       textto.setText(var2);
+   }
+
+public void watthour_joule(){
+       double var = Double.parseDouble(textfrom.getText().toString());
+       var = var*3600;
+       String var2 = Double.toString(var);
+       textto.setText(var2);
+   }
+
+
+public void watthour_kilojoule(){
+       double var = Double.parseDouble(textfrom.getText().toString());
+       var = var*3.6;
+       String var2 = Double.toString(var);
+       textto.setText(var2);
+   }
+
+
+public void watthour_gramcalorie(){
+       double var = Double.parseDouble(textfrom.getText().toString());
+       var = var*860;
+       String var2 = Double.toString(var);
+       textto.setText(var2);
+   }
+public void watthour_kilocalorie(){
+       double var = Double.parseDouble(textfrom.getText().toString());
+       var = var/1.162;
+       String var2 = Double.toString(var);
+       textto.setText(var2);
+   }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jPanel1 = new javax.swing.JPanel();
+        energyfrom = new javax.swing.JComboBox<>();
+        energyto = new javax.swing.JComboBox<>();
+        textfrom = new javax.swing.JTextField();
+        textto = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        Back = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(0, 51, 51));
+
+        energyfrom.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        energyfrom.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Joule", "Kilojoule", "Gram calorie", "Kilocalorie", "Watt hour" }));
+
+        energyto.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        energyto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Joule", "Kilojoule", "Gram calorie", "Kilocalorie", "Watt hour" }));
+        energyto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                energytoActionPerformed(evt);
+            }
+        });
+
+        textfrom.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+
+        textto.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton1.setText("Enter");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        Back.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        Back.setText("Back");
+        Back.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BackActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(80, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(textfrom)
+                    .addComponent(energyfrom, 0, 166, Short.MAX_VALUE))
+                .addGap(70, 70, 70)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(energyto, 0, 154, Short.MAX_VALUE)
+                    .addComponent(textto))
+                .addGap(130, 130, 130))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(Back, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(182, 182, 182)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(Back, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(textfrom, javax.swing.GroupLayout.DEFAULT_SIZE, 51, Short.MAX_VALUE)
+                    .addComponent(textto))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(energyfrom, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(energyto, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(115, 115, 115))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        pack();
+        setLocationRelativeTo(null);
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void energytoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_energytoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_energytoActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        if(energyfrom.getSelectedIndex() == energyto.getSelectedIndex()){
+                    same();
+                }
+        else{
+            if(energyfrom.getSelectedIndex()==0 && energyto.getSelectedIndex()==1){
+                    joule_kilojoule();
+                }
+            if(energyfrom.getSelectedIndex()==0 && energyto.getSelectedIndex()==1){
+                    joule_kilojoule();
+            }
+            else if(energyfrom.getSelectedIndex()==0 && energyto.getSelectedIndex()==2){
+                joule_gramcalorie();
+            }
+            else if(energyfrom.getSelectedIndex()==0 && energyto.getSelectedIndex()==3){
+                joule_kilocalorie();
+            }
+            else if(energyfrom.getSelectedIndex()==0 && energyto.getSelectedIndex()==4){
+                joule_watthour();
+            }
+            else if(energyfrom.getSelectedIndex()==1 && energyto.getSelectedIndex()==0){
+               kilojoule_joule();
+            }
+            else if(energyfrom.getSelectedIndex()==1 && energyto.getSelectedIndex()==2){
+                kilojoule_gramcalorie();
+            }
+            else if(energyfrom.getSelectedIndex()==1 && energyto.getSelectedIndex()==3){
+                kilojoule_kilocalorie();
+            }
+            else if(energyfrom.getSelectedIndex()==1 && energyto.getSelectedIndex()==4){
+                kilojoule_watthour();
+            }
+            else if(energyfrom.getSelectedIndex()==2 && energyto.getSelectedIndex()==0){
+                gramcalorie_joule();
+            }
+            else if(energyfrom.getSelectedIndex()==2 && energyto.getSelectedIndex()==1){
+                gramcalorie_kilojoule();
+            }
+            else if(energyfrom.getSelectedIndex()==2 && energyto.getSelectedIndex()==3){
+                gramcalorie_kilocalorie();
+            }
+            else if(energyfrom.getSelectedIndex()==2 && energyto.getSelectedIndex()==4){
+                gramcalorie_watthour();
+            }
+            else if(energyfrom.getSelectedIndex()==3 && energyto.getSelectedIndex()==0){
+                kilocalorie_joule();
+            }
+            else if(energyfrom.getSelectedIndex()==3 && energyto.getSelectedIndex()==1){
+                kilocalorie_kilojoule();
+            }
+            else if(energyfrom.getSelectedIndex()==3 && energyto.getSelectedIndex()==2){
+                kilocalorie_gramcalorie();
+            }
+            else if(energyfrom.getSelectedIndex()==3 && energyto.getSelectedIndex()==4){
+                kilocalorie_watthour();
+            }
+            else if(energyfrom.getSelectedIndex()==4 && energyto.getSelectedIndex()==0){
+                watthour_joule();
+            }
+            else if(energyfrom.getSelectedIndex()==4 && energyto.getSelectedIndex()==1){
+                watthour_kilojoule();
+            }
+            else if(energyfrom.getSelectedIndex()==4 && energyto.getSelectedIndex()==2){
+                watthour_gramcalorie();
+            }
+            else if(energyfrom.getSelectedIndex()==4 && energyto.getSelectedIndex()==3){
+                watthour_kilocalorie();
+            }
+    }//GEN-LAST:event_jButton1ActionPerformed
+    }
+    private void BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackActionPerformed
+        // TODO add your handling code here:
+        Converter.object.setVisible(true);
+        obj.setVisible(false);
+    }//GEN-LAST:event_BackActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+
+    public static Energy obj = null ;
+    public static void Energyfun() {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Windows".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Energy.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Energy.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Energy.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Energy.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                obj = new Energy();
+                obj.setVisible(true);
+                //new Energy().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Back;
+    private javax.swing.JComboBox<String> energyfrom;
+    private javax.swing.JComboBox<String> energyto;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField textfrom;
+    private javax.swing.JTextField textto;
+    // End of variables declaration//GEN-END:variables
+}
