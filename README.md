@@ -1,2 +1,29 @@
-# Education-Management-System
-Education Management System is my university's fifth semester OOP Sessional course project. It's desktop application based project developed in Java using JSwing framework. The project mainly focuses on some of the aspects of the management system of education in a university. For example, managing teachers and students’ activity by utilization of some common features like, checking result, grading, counting attendance, updating the student list etc. Besides, the other two features of our project are “Scientific Calculator and Converter”. MySQL and MS Access has been used as our project database. My contribution lies in the part of "Scientific Calculator". Also I have contributed in some other parts of the project too.
+The project mainly focuses on managing various aspects of a university's education system, such as:  
+- **Managing teachers and students' activities**  
+- **Checking results and grading**  
+- **Counting attendance**  
+- **Updating the student list**  
+
+Additionally, the project includes **two extra features**:  
+1. **Scientific Calculator**  
+2. **Unit Converter**  
+
+## Technologies Used  
+- **Programming Language:** Java  
+- **GUI Framework:** Java Swing  
+- **Database:** MySQL & MS Access  
+
+## Features  
+
+### 🎓 Education Management System  
+✅ Manage teacher and student records  
+✅ Check and update **grades**  
+✅ Track **attendance**  
+✅ Maintain **student lists**  
+
+### 🔢 Additional Features  
+🔢 **Scientific Calculator** – Supports basic arithmetic, trigonometry, and advanced functions  
+🔄 **Unit Converter** – Convert length, temperature, mass, and digital storage  
+
+## My Contribution  
+💡 I mainly contributed to the **Scientific Calculator** feature and also assisted in other parts of the project.  
