@@ -11,6 +11,3 @@
 - **GUI Framework:** Java Swing  
 - **Database:** MySQL & MS Access
 - **IDE:** Apache NetBeans
-
-## My Contribution  
-- I mainly contributed to the **Scientific Calculator** feature and also assisted in other parts of the project.
